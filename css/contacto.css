@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Form Contact */
+/* Formulario de Contacto */
 
 .gradient-brand-color {
     background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
@@ -45,9 +45,7 @@
         padding: 5rem !important
     }
 }
-@media (min-width: 1024px) {
-    
-}
+
 .shadow-lg, .shadow-lg--on-hover:hover {
     box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
 }
@@ -93,7 +91,7 @@
     align-items: center;
   }
   .navbar-item {
-    margin: 0.4em;
+    margin: .4rem;
     width: 100%;
   }
   
@@ -102,7 +100,7 @@
     color: var(--navbar-text-color);
     text-decoration: none;
     display: flex;
-    font-weight: 400;
+    font-weight: 600;
     align-items: center;
   }
   
@@ -113,8 +111,9 @@
   .navbar-link {
     justify-content: center;
     width: 100%;
-    padding: 0.4em 1.8em;
+    padding: .4em .8em;
     border-radius: 5px;
+    white-space: nowrap;
   }
   
   .navbar-link:is(:focus, :hover) {
