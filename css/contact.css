@@ -2,51 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: rgb(248, 250, 250);
 }
 
-.form-contact {
-  width: 50%;
-  height: 70vh;
-  margin: auto;
-  background-color: rgb(32, 30, 30);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body{
+    margin-top:20px;
+    background:#eee;
+}
+.gradient-brand-color {
+    background-image: -webkit-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+    color: #fff;
+}
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0
 }
 
-.form-contact label {
-  display: block;
-  margin-bottom: 3px;
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
 }
 
-.form-contact input {
-  width: 350px;
-  color: black;
-  margin-bottom: 5px;
-  padding: 10px;
-  border-radius: 8px;
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
 }
-
-textarea[id*='message'] {
-  height: 100px;
-  color: black;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 8px;
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
 }
-
-.btn-submit {
-  width: 200px;
-  background-color: rgb(26, 130, 190);
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-
-.btn-submit:hover {
-  background-color: rgb(13, 80, 119);
-  transition-duration: .5s;
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
 }
