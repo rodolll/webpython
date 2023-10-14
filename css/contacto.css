@@ -121,7 +121,7 @@
     background-color: var(--navbar-bg-contrast);
   }
   .navbar-logo {
-    background-color: var(--navbar-text-color-focus);
+    background: url('../images/door-closet-16.png') no-repeat center ;
     border-radius: 50%;
     width: 30px;
     height: 30px;
