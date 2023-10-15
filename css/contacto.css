@@ -393,6 +393,11 @@
 
 */
 
+.container-gral{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
 .container-nos{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -416,10 +421,15 @@
 
 
 .nos-uno:hover, .nos-dos:hover, .nos-tres:hover, .nos-cuatro:hover{
-  height: 120px;
+  height: 130px;
   background-color: black;
   color: white;
 }
 .img-grupo{
   text-align: center;
 }
+
+h1, h2, p{
+  text-align: center;
+}
+
