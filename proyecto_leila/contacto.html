@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muebles X</title>
+        <link rel="muebles icon" href="./static/img/favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+
+    <body>
+
+        <script src="js/funciones.js"></script>
+        <header class="header">
+           <nav>            
+              <div id="logo">
+                  <a href="./index.html">
+                      <i class="fas fa-home fa-spin"></i>
+                      <span class="logo-text">
+                          Muebles X
+                      </span>
+                  </a>
+              </div>
+              <ul class="nav-links"> 
+                  <li><a href="./productos.html">Productos</a></li>                               
+                  <li><a href="./nosotros.html">Sobre nosotros</a></li>  
+                  <li><a href="./contacto.html">Contacto</a></li>     
+              </ul>
+            </nav>
+        </header>
+
+      <main>
+          <div class="container">
+                <form  id="formRegister" method="POST" " onsubmit="return validarFormulario()" >
+                  <br>
+                  <div class="col-6">
+                    <label for="firstname" class="form-label">Nombre* :</label>
+                    <input type="text" class="form-control" name = "firstname" id="firstname">
+                  </div>
+              
+                  <div class="col-6">
+                    <label for="lastname" class="form-label">Apellido* :</label>
+                    <input type="text" class="form-control" name="lastname" id="lastname">
+                  </div>
+              
+                  <div class="col-6">
+                    <label for="empresa" class="form-label">Empresa:</label>
+                    <input type="text" class="form-control" id="empresa">
+                  </div>
+              
+                  <div class="col-6">
+                    <label for="email" class="form-label">Email*:</label>
+                    <input type="email" name = "email" class="form-control" id="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"> *Requerido </div>
+                  </div>
+              
+                  <div class="col-6">
+                    <label for="telefono" class="form-label">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono">
+                  </div>
+              
+                  <div class="col-6">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Escriba su mensaje" rows="3"></textarea>
+                  </div>
+                  <br>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>    
+       </main>
+
+       <footer id="footer"> 
+           <a href="https://www.facebook.com"> Seguinos <i class="fa fa-facebook-square" aria-hidden="true"></i>  </a>
+           <a href="https://api.whatsapp.com/"> <i class="fa fa-whatsapp" aria-hidden="true"></i> +54 9 11 123456</a>
+           <a href=""> <i class="fa fa-map-marker" aria-hidden="true"></i> Puntos de venta  </a>
+           <a href=""> Preguntas Frecuentes </a>
+           <a href=""> Ayuda </a>
+       </footer>    
+   
+    </body>
+</html>
