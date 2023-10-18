@@ -6,7 +6,6 @@
 
 /* Formulario de Contacto */
 
-
 .gradient-brand-color {
     background-image: -webkit-linear-gradient(0deg, #151515 0%, #3f3e3e 100%);
     background-image: -ms-linear-gradient(0deg, #151515 0%, #3f3e3e 100%);
@@ -32,16 +31,9 @@
 .list-style--none {
     list-style: none;
 }
-.contact__wrapper {
-    background-color: #fff;
-    border-radius: 0 0 .625rem .625rem
-}
+
 
 @media (min-width: 1024px) {
-    .contact__wrapper {
-        border-radius: .625rem 0 .625rem .625rem
-    }
-
     .contact-form__wrapper {
         padding: 5rem !important
     }
