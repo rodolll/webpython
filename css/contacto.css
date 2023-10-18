@@ -120,13 +120,7 @@
     color: var(--navbar-text-color-focus);
     background-color: var(--navbar-bg-contrast);
   }
-  .navbar-logo {
-    background: url('../images/door-closet-16.png') no-repeat center ;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin-right: 0.5em;
-  }
+  
   #navbar-toggle {
     cursor: pointer;
     border: none;

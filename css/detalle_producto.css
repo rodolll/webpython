@@ -1,0 +1,34 @@
+main {
+  padding-top: 100px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: white;
+  background-color: rgb(15, 15, 32);
+  border: 1px solid rgb(41, 39, 39);
+  border-radius: 20px;
+  box-shadow: 3px 7px 7px 1px rgb(83, 79, 79);
+}
+
+.titulo {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.img-producto {
+  width: 50%;
+}
+
+.descripcion {
+  font-size: 14px;
+}
+
+.precio {
+  font-size: 1.5rem;
+}
