@@ -5,6 +5,7 @@
 }
 
 .container-gral{
+  color: white;
   padding: 100px 150px;
 }
 
@@ -34,8 +35,8 @@
 
 .nos-uno:hover, .nos-dos:hover, .nos-tres:hover, .nos-cuatro:hover{
   height: 130px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .img-grupo{
