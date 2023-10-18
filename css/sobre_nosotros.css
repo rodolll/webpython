@@ -1,25 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container-gral{
-  padding-left: 150px;
-  padding-right: 150px;
+  padding: 50px 150px;
 }
 
 .container-nos{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr ; 
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
   padding: 5px;
 }
 
 .nos-uno, .nos-dos, .nos-tres, .nos-cuatro{
-  padding: 5px;
+  padding: 12px;
   border: 1px black solid;
-  height: 30px; 
-  overflow: hidden; 
+  height: 35px;
+  overflow: hidden;
   transition: height 0.5s ease; 
   border-radius: 5px;
   text-align: center;
 }
+
 
 .nos-tres, .nos-cuatro{
   margin-top: 5px;
@@ -31,6 +37,7 @@
   background-color: black;
   color: white;
 }
+
 .img-grupo{
   text-align: center;
 }
