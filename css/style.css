@@ -194,10 +194,10 @@ header nav {
   
 .footer .row{
   width:100%;
-  margin:1% 0%;
-  padding:0.6% 0%;
+  margin:2% 0%;
+  padding: 0 6%;
   color:gray;
-  font-size:0.8em;
+  font-size:.9em;
 }
   
 .footer .row a{
@@ -216,13 +216,14 @@ header nav {
   
 .footer .row ul li{
   display:inline-block;
-  margin:0px 30px;
+  margin:20px 30px;
 }
 
 .footer .row p {
     color: #fff;
     margin: auto;
     text-align: center;
+    padding: 10px;
 }
   
   

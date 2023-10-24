@@ -71,5 +71,10 @@ article button a {
   section {
     grid-template-columns: 1fr;
     gap: 15px 0;
+    margin: 0 10px;
+  }
+  article button {
+    padding: .9rem 3.5rem;
+    border-radius: 10px;
   }
 }
