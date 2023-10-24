@@ -68,10 +68,11 @@ section {
 .columna .campo-medio {
     max-width: 50%;
     flex-grow: 1;
+    padding: 0 5px 0 0;
     margin-bottom: 1.5rem;
 }
 
-.required-field::before {
+.required-field::before, .obligatorio::before {
     content: "*";
     color: red;
     margin-right: 5px;
@@ -133,6 +134,17 @@ textarea:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
+.obligatorio {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 12px;
+    color: #495057;
+}
+
+.invalid {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 1, 1, 0.603);
+}
 
 /* Tablets */
 @media screen and (max-width: 768px) {
