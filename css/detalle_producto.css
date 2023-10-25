@@ -28,7 +28,9 @@ article {
 }
 
 .img-producto {
-  width: 50%;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
 }
 
 .descripcion {

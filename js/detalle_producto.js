@@ -1,19 +1,19 @@
 const lista_productos = [
   {
-    titulo: "producto 1",
+    titulo: "Mesa Redonda",
     precio: 200,
     color: "",
     medidas: "",
     descripcion: "",
-    imagen: ""
+    imagen: "./images/pexels-tiana-2995012.jpg"
   },
   {
-    titulo: "producto 2",
+    titulo: "Sillón 3 cuerpos",
     precio: 150,
     color: "",
     medidas: "",
     descripcion: "",
-    imagen: ""
+    imagen: "./images/living.jpg"
   },
   {
     titulo: "producto 3",
@@ -43,7 +43,7 @@ if(isNaN(id_producto) || (0 >= id_producto || id_producto > lista_productos.leng
   html = `
     <article>
       <h1 class="titulo">${producto.titulo}</h1>
-      <img src="" alt=${producto.titulo} class="img-producto">
+      <img src=${producto.imagen} alt=${producto.titulo} class="img-producto">
       <p class="descripcion">${producto.descripcion}</p>
       <strong class="precio">Precio: $${producto.precio}</strong>
     </article>

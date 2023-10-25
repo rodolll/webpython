@@ -7,7 +7,7 @@
 
 section {
     margin: auto 6%;
-    padding: 100px 0;
+    padding: 5.5rem 0 3rem 0;
 }
 
 .contenedor {
@@ -17,12 +17,12 @@ section {
 }
 
 .contactanos {
-    background-image: -webkit-linear-gradient(0deg, #151515 0%, #3f3e3e 100%);
-    background-image: -ms-linear-gradient(0deg, #151515 0%, #3f3e3e 100%);
+    background-image: -webkit-linear-gradient(0deg, #203d5e 0%, #3d7ac0 100%);
+    background-image: -ms-linear-gradient(0deg, #203d5e 0%, #3d7ac0 100%);
     color: #fff;
     width: 60%;
     border-radius: 0 .625rem .625rem 0;
-    padding: 4rem;
+    padding: 3.5rem;
 }
 
 .contactanos h3 {
@@ -45,10 +45,9 @@ section {
     margin-left: -1.5rem;
 }
 
-
 .formulario {
     background-color: #fff;
-    padding: 3rem;
+    padding: 2.5rem;
     border: 1px solid rgb(37, 37, 37);
     border-radius: .625rem 0 0 .625rem;
 }
