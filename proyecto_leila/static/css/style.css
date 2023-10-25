@@ -20,7 +20,7 @@ declarar variables CSS globales
 /* 5 especificidad */
 body{
     background: var(--bg-color);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Mulsish';
 }
 
 /* Selector de etiqueta */

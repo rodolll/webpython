@@ -18,6 +18,38 @@ section {
   justify-items: center;
 }
 
+#banner{
+  background-image: url('../images/banner_index.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  box-shadow:inset 0 0 0 2000px rgba(87, 85, 85, 0.5);
+}
+
+.banner-card{
+  text-align: center;
+  padding: 0px 160px;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner-card h1{
+  color: #FFF;
+  font-size: 4rem ;
+}
+
+/*
+.banner-card h2{
+  color: #FFF;
+  font-size: 3rem ;
+}
+*/
+
 article {
   width: 100%;
   height: 250px;
@@ -42,7 +74,7 @@ article p {
 }
 
 article button {
-  background-color: rgb(0, 110, 255);
+  background-color: rgb(1, 29, 66);
   margin-top: 20px;
   padding: 1rem 5rem;
   border-radius: 10px;
