@@ -52,7 +52,7 @@ section {
 
 article {
   width: 100%;
-  height: 250px;
+  height: 325px;
   background-color: rgb(209, 209, 230);
   border: 1px solid black;
   border-radius: 10px;
@@ -61,7 +61,7 @@ article {
 
 article h1 {
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 article img {
@@ -75,7 +75,7 @@ article p {
 
 article button {
   background-color: rgb(1, 29, 66);
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 1rem 5rem;
   border-radius: 10px;
 }

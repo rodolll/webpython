@@ -89,8 +89,7 @@ header nav {
 }
 
 .navbar-link:is(:focus, :hover) {
-  color: var(--navbar-text-color-focus);
-  background-color: var(--navbar-bg-contrast);
+  background-color: #19324e;
 }
 
 #navbar-toggle {
