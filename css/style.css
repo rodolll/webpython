@@ -190,6 +190,8 @@ header nav {
 /* Footer */
 
 .footer{
+  position: relative;
+  bottom: -2rem;
   background: #274c77;
   padding:30px 0 0 0;
   font-family: 'Mulish', sans-serif;
@@ -211,7 +213,7 @@ header nav {
 }
   
 .footer .row a:hover{
-  color:#ccc5c5;
+  color:#fff;
 }
   
 .footer .row ul{
