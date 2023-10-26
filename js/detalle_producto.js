@@ -1,27 +1,27 @@
 const lista_productos = [
   {
     titulo: "Mesa Redonda",
-    precio: 200,
-    color: "",
-    medidas: "",
-    descripcion: "",
+    precio: 80000,
+    color: "blanco, negro, natural",
+    medidas: "100cm de diámetro x 75cm",
+    descripcion: "Madera maciza con pata central pintada ",
     imagen: "./images/pexels-tiana-2995012.jpg"
   },
   {
-    titulo: "Sillón 3 cuerpos",
-    precio: 150,
-    color: "",
-    medidas: "",
-    descripcion: "",
-    imagen: "./images/living.jpg"
+    titulo: "Silla comedor",
+    precio: 40000,
+    color: "Roble, Nogal y Wengue",
+    medidas: "88cm x 43cm",
+    descripcion: "Madera maciza con respaldo curvo",
+    imagen: "./images/silla1.jpeg"
   },
   {
-    titulo: "Silla comedor",
-    precio: 400,
-    color: "",
-    medidas: "",
-    descripcion: "",
-    imagen: "./images/silla1.jpeg"
+    titulo: "Cama con cajones",
+    precio: 150000,
+    color: "Natural o blanco",
+    medidas: "1 plaza o 2 plazas",
+    descripcion: "Cama con cajones y baulera",
+    imagen: "./images/cama.jpg"
   }
 ]
 
