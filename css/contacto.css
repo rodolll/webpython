@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
   font-family: 'Mulish', sans-serif
 
 }
 
 section {
     margin: auto 6%;
-    padding: 5.5rem 0 3rem 0;
+    padding: 4.7rem 0 3rem 0;
 }
 
 .contenedor {
@@ -24,11 +23,11 @@ section {
     color: #fff;
     width: 60%;
     border-radius: 0 .625rem .625rem 0;
-    padding: 3.5rem;
+    padding: 1.5rem 3.5rem .8rem;
 }
 
 .contactanos h3 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .lista-contacto {
@@ -37,7 +36,7 @@ section {
 }
 
 .lista-contacto li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
     padding-left: .5rem;
 }
 
@@ -49,7 +48,7 @@ section {
 
 .formulario {
     background-color: #fff;
-    padding: 2.5rem;
+    padding: 1.8rem 2.5rem 0;
     border: 1px solid rgb(37, 37, 37);
     border-radius: .625rem 0 0 .625rem;
 }
@@ -150,6 +149,9 @@ textarea:focus {
 /* Tablets */
 @media screen and (max-width: 768px) {
 
+    iframe {
+        display: none;
+    }
     .contenedor {
         flex-direction: column;
     }
