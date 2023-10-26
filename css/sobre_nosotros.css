@@ -47,6 +47,14 @@ h1, h2, p{
   text-align: center;
 }
 
+.terminos{
+  border: 1px white solid;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 768px){
   .container-gral{
     padding: 6rem 3.125rem;
