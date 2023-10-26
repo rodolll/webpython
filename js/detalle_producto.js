@@ -16,12 +16,12 @@ const lista_productos = [
     imagen: "./images/living.jpg"
   },
   {
-    titulo: "producto 3",
+    titulo: "Silla comedor",
     precio: 400,
     color: "",
     medidas: "",
     descripcion: "",
-    imagen: ""
+    imagen: "./images/silla1.jpeg"
   }
 ]
 
