@@ -54,27 +54,29 @@
     
         </div>
     
-        <form class="formulario" novalidate="novalidate" id="myForm">
+        <form class="formulario" id="myForm" method="POST">
             <div class="columna">
                 <div class="campo-completo">
                     <label class="required-field" for="fullName">Nombre Completo</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="Ana García">
+                    <input type="text" id="fullName" name="fullName" placeholder="Ana García" required>
                 </div>
     
                 <div class="campo-medio">
                     <label class="required-field" for="email">Correo Electrónico</label>
-                    <input type="text" id="email" name="email" placeholder="ana.garcia@example.com">
+                    <input type="email" id="email" name="_replyto" placeholder="ana.garcia@example.com" required autocomplete="email">
                 </div>
     
                 <div class="campo-medio">
                     <label for="phone">Número de teléfono</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(11) 15 4545-4545">
+                    <input type="tel" id="phone" name="phone" placeholder="(11) 15 4545-4545" autocomplete="cc-number">
                 </div>
     
                 <div class="campo-completo">
                     <label class="required-field" for="message">Cómo podemos ayudarte?</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Hola, me gustaria..."></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Hola, me gustaria..." required minlength="15"></textarea>
                 </div>
+
+                <input type="text" name="_gotcha" aria-label="_gotcha" style="display:none" />
 
                 <p class="obligatorio">Este formulario contiene campos obligatorios.</p>
     

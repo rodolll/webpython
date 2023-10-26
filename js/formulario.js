@@ -1,49 +1,70 @@
-document.getElementById("myForm").addEventListener("submit", handleSubmit);
+const form = document.getElementById("myForm");
+const id = "moqorkrz"
+form.setAttribute("action", `https://formspree.io/f/${id}`);
 
-function handleSubmit(event) {
+const nombre = form.elements.namedItem('fullName')
+const correo = form.elements.namedItem('_replyto');
+const mensaje = form.elements.namedItem('message');
+
+nombre.addEventListener('invalid', () => {
+  nombre.classList.add("invalid");
+});
+correo.addEventListener('invalid', () => {
+  correo.classList.add("invalid");
+});
+mensaje.addEventListener('invalid', () => {
+  mensaje.classList.add("invalid");
+});
+
+// Eliminando clase invalid cuando el usuario vuelva a escribir en el campo correspondiente
+nombre.addEventListener("input", function(event) {
+  nombre.classList.remove("invalid");
+});
+correo.addEventListener("input", function(event) {
+  correo.classList.remove("invalid");
+});
+mensaje.addEventListener("input", function(event) {
+  mensaje.classList.remove("invalid");
+});
+
+
+form.addEventListener("submit", (event) => {
   event.preventDefault();
+
   const { elements } = event.currentTarget
-  // Obtengo todos los inputs y el textarea
-  const fullName = elements.namedItem("fullName")
-  const email = elements.namedItem("email")
-  const phone = elements.namedItem("phone")
-  const message = elements.namedItem("message")
-
-  // Eliminando clase invalid cuando el usurio vuelva a escribir en el campo correspondiente
-  fullName.addEventListener("input", function(event) {
-    fullName.classList.remove("invalid");
-  });
-  email.addEventListener("input", function(event) {
-    email.classList.remove("invalid");
-  });
-  message.addEventListener("input", function(event) {
-    message.classList.remove("invalid");
-  });
-
-  // Haciendo las válidaciones para cada campo
-  const nameRegex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ\s]+$/
-  if (!nameRegex.test(fullName.value)) {
-    fullName.classList.add("invalid");
+  
+  const telefono = elements.namedItem("phone")
+  const honeypot = elements.namedItem("_gotcha")
+  // Validar el campo honeypot, para evitar bots de spam
+  if (honeypot.value) {
     return false;
   }
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  if (!emailRegex.test(email.value)) {
-    email.classList.add("invalid");
-    return false;
+  // Válidando campos del formulario
+  const nombreRegex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ\s]+$/;
+  if (!nombreRegex.test(nombre.value)) {
+    nombre.classList.add("invalid")
+    alert("Nombre inválido")
+    return false
   }
-  if (message.value.length < 15) {
-    message.classList.add("invalid");
-    alert("El mensaje debe contener por lo menos 15 carácteres")
-    return false;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(correo.value)) {
+    correo.classList.add("invalid")
+    alert("Correo inválido\nEscriba un correo válido")
+    return false
+  }
+  if (mensaje.value.length < 15) {
+    mensaje.classList.add("invalid")
+    alert('El campo de mensaje es inválido.\nEl mensaje debe contener por lo menos 15 carácteres.');
+    return false
   }
 
   // Si todos los campos del formulario son válidos
-  alert("Formulario enviado correctamente")
-  fullName.value = ""
-  email.value = ""
-  message.value = ""
-  phone.value = ""  
+  nombre.value = ""
+  correo.value = ""
+  mensaje.value = ""
+  telefono.value = ""  
+  alert("Formulario enviado correctamente, gracias por su mensaje")
+  event.currentTarget.requestSubmit()
   return true
-}
-
+});
 
