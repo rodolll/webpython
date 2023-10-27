@@ -41,11 +41,21 @@ if(isNaN(id_producto) || (0 >= id_producto || id_producto > lista_productos.leng
   let producto = lista_productos[id_producto-1]
 
   html = `
-    <article>
-      <h1 class="titulo">${producto.titulo}</h1>
-      <img src=${producto.imagen} alt=${producto.titulo} class="img-producto">
-      <p class="descripcion">${producto.descripcion}</p>
-      <strong class="precio">Precio: $${producto.precio}</strong>
+    <article class="card">
+      <div>
+        <img src=${producto.imagen} alt=${producto.titulo} class="img-producto">
+      </div>
+      <div class="info">
+        <div>
+          <h1 class="titulo">${producto.titulo}</h1>
+          <h2 class="descripcion">${producto.descripcion}</h2>
+        </div>
+        <div>  
+          <p class="color">Color: ${producto.color}</p>
+          <p class="medida">Medidas: ${producto.medidas}</p>
+          <strong class="precio">Precio: $${producto.precio}</strong>
+        </div>
+      </div>
     </article>
   `
 }

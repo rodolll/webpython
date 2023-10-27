@@ -9,10 +9,8 @@ main {
   padding-top: 100px;
 }
 
-article {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+.card {
+  display: flex;
   width: 80%;
   margin: auto;
   padding: 20px;
@@ -22,21 +20,100 @@ article {
   box-shadow: 3px 7px 7px 1px rgb(83, 79, 79);
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1.2rem;
+  padding: 1rem;
+}
+
 .titulo {
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 .img-producto {
-  width: 350px;
-  height: 350px;
+  width: 375px;
+  height: 375px;
   border-radius: 20px;
 }
 
-.descripcion {
-  font-size: 14px;
+.descripcion, .color, .medida {
+  color: rgba(0, 0, 0, 0.822);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: .1rem;
 }
 
 .precio {
-  font-size: 1.5rem;
+  font-style: oblique;
+  font-size: 1.3rem;
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  main {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .info {
+    margin-left: .5rem;
+  }
+  .titulo {
+    font-size: 1.8rem;
+    margin-top: .1rem;
+  }
+  .img-producto {
+    width: 280px;
+    height: 280px;
+  }
+  .descripcion, .color, .medida {
+    font-size: .9rem;
+  }
+  .precio {
+    font-size: 1.1rem;
+  }
+  
+}
+
+/* Celulares */
+@media screen and (max-width: 425px) {
+  main {
+    min-height: 100vh;
+    padding-top: 4rem;
+  }
+  .card {
+    display: block;
+    width: 95%;
+    border: 1px solid rgb(41, 39, 39);
+    box-shadow: 3px 5px 5px 1px rgb(83, 79, 79);
+    text-align: center;
+  }
+  .info {
+    display: block;
+    padding: 1rem 0 1rem;
+  }
+  .titulo {
+    font-size: 1.5rem;
+    margin-top: .1rem;
+  }
+  .img-producto {
+    width: 225px;
+    height: 225px;
+  }
+  .descripcion, .color, .medida {
+    font-size: .8rem;
+    margin-bottom: .2rem;
+  }
+  .precio {
+    font-size: 1rem;
+  }
 }
