@@ -22,7 +22,31 @@ const lista_productos = [
     medidas: "1 plaza o 2 plazas",
     descripcion: "Cama con cajones y respaldo",
     imagen: "./images/Cama-box.jpg"
-  }
+  },
+  {
+    titulo: "Placard",
+    precio: 360000,
+    color: "blanco, negro",
+    medidas: "180cm de ancho x 200cm de alto",
+    descripcion: "Hecho con melamina, con puertas corredizas",
+    imagen: "./images/placard.jpg"
+  },
+  {
+    titulo: "Rack TV",
+    precio: 75000,
+    color: "blanco, negro, venecia",
+    medidas: "150cm Largo, 50cm Profundidad, 60cm Alto",
+    descripcion: "Sosten para televisores y otros dispositivos de entretenimiento",
+    imagen: "./images/rack.jpg"
+  },
+  {
+    titulo: "Escritorio",
+    precio: 100000,
+    color: "blanco, natural",
+    medidas: "70cm de profundidad x 130cm de ancho",
+    descripcion: "Escritorio de oficina moderno",
+    imagen: "./images/escritorio.jpg"
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)
