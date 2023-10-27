@@ -20,8 +20,8 @@ const lista_productos = [
     precio: 150000,
     color: "Natural o blanco",
     medidas: "1 plaza o 2 plazas",
-    descripcion: "Cama con cajones y baulera",
-    imagen: "./images/cama.jpg"
+    descripcion: "Cama con cajones y respaldo",
+    imagen: "./images/Cama-box.jpg"
   }
 ]
 

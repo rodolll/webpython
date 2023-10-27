@@ -11,8 +11,8 @@
 
 .container-nos{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   gap: 5px;
   padding: 5px;
 }
@@ -22,19 +22,19 @@
   border: 1px white solid;
   height: 2.1875rem;
   overflow: hidden;
-  transition: height 0.5s ease; 
+  transition: height 0.5s ease-in-out; 
   border-radius: 5px;
   text-align: center;
 }
 
 
-.nos-tres, .nos-cuatro{
+/* .nos-tres, .nos-cuatro{
   margin-top: 5px;
-}
+} */
 
 
 .nos-uno:hover, .nos-dos:hover, .nos-tres:hover, .nos-cuatro:hover{
-  height: 8.125rem;
+  height: 13rem;
   background-color: #caf0f8;
   color: black;
 }
@@ -57,11 +57,21 @@ h1, h2, p{
 
 @media screen and (max-width: 768px){
   .container-gral{
-    padding: 6rem 3.125rem;
+    padding: 6rem 3.125rem 16rem 3.125rem;
   }
-  .nos-uno:hover, .nos-dos:hover, .nos-tres:hover, .nos-cuatro:hover{
-    height: 11.25rem;
+  .container-nos{
+    grid-template-columns: 1fr 1fr;
   }
+  .nos-uno, .nos-dos, .nos-tres, .nos-cuatro{
+    height: auto;
+    transition: none;
+  }
+  .nos-tres, .nos-cuatro{
+  margin-top: 5px;
+  }
+  /* .nos-uno:hover, .nos-dos:hover, .nos-tres:hover, .nos-cuatro:hover{
+    height: 24rem;
+  } */
 
 }
 
@@ -69,7 +79,18 @@ h1, h2, p{
   .container-gral{
     padding: 4rem 1.25rem;
   }
-  .nos-uno:hover, .nos-dos:hover, .nos-tres:hover, .nos-cuatro:hover{
-    height: 20.3125rem;
+  .container-nos{
+    grid-template-columns: 1fr;
   }
+  
+  .nos-uno, .nos-dos, .nos-tres, .nos-cuatro{
+    height: auto;
+    transition: none;
+  }
+  .nos-tres, .nos-cuatro{
+    margin-top: 5px;
+  }
+  /* .nos-uno:hover, .nos-dos:hover, .nos-tres:hover, .nos-cuatro:hover{
+    height: 20.3125rem;
+  } */
 }
