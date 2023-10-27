@@ -56,9 +56,11 @@ let html
 
 if(isNaN(id_producto) || (0 >= id_producto || id_producto > lista_productos.length)) {
   html = `
-    <article>
-      <h1>No hay un producto con ese indice</h1>
-      <p>:/</p>
+    <article class="error">
+      <h1>
+        No existe el producto que esta buscando :/
+      </h1>
+      <a href="../index.html"> Volver a inicio</a>
     </article>
   `
 } else {
