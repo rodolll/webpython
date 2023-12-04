@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/perfil.css">
+  <!-- Favicon -->
+	<link rel="icon" type="image/png" href="./images/favicon.ico" />
+	<!-- Fuentes -->
+	<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <title>Mi perfil</title>
+</head>
+<body>
+
+  <!-- NavBar -->
+	<header id="navbar">
+    <nav class="navbar-container">
+    <a href="./index.html" class="home-link">
+    <img src="./images/simple.png" alt="Logo" width="140" class="animate__animated animate__backInDown">
+    </a>
+    <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    <div id="navbar-menu" aria-labelledby="navbar-toggle">
+    <ul class="navbar-links">
+      <li class="navbar-item"><a class="navbar-link" href="./sobre_nosotros.html">Sobre Nosotros</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="./contacto.html">Contacto</a></li>
+      <li class="navbar-item user"><a class="navbar-link" href="./perfil.html"><img id="img_user" src="" alt="User"></a></li>
+			<li class="navbar-item not_user"><a class="navbar-link" href="#">Login</a></li>
+			<li class="navbar-item not_user"><a class="navbar-link" href="./registro.html">Registro</a></li>
+    </ul>
+    </div>
+  </nav>
+  </header>
+
+  <div class="perfil">
+    <h1>Perfil</h1>
+    <div id="error" style="color: red; text-align: center;"></div>
+    <form id="updateForm" enctype="multipart/form-data">
+      <input type="text" name="first_name" id="first_name" placeholder="Nombre">
+      <input type="text" name="last_name" id="last_name" placeholder="Apellido">
+      <input type="text" name="username" id="username" placeholder="Usuario" required>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <input type="file" name="photo" id="photo" accept="image/*">
+      <button type="submit">Actualizar perfil</button>
+    </form>
+  </div>
+  
+  <script src="./js/perfil.js"></script>
+  <!-- Script navbar toggle -->
+	<script src="./js/header.js"></script>
+</body>
+</html>

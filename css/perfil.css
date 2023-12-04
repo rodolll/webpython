@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.perfil {
+  width: 50%;
+  margin-top: 2rem;
+  background-color: #274c77;
+  border-radius: 2.5rem;
+  padding: 2rem 3rem;
+}
+
+.perfil h1 {
+  color: #dfe4e9;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1;
+}
+
+form input, form button {
+  padding: 1rem;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0357b1;
+  border: 1px solid #007bff;
+
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) { 
+  .perfil {
+    width: 70%;
+    margin-top: 4rem;
+    padding: 1rem 3rem;
+  }
+  form {
+    gap: .5rem;
+  }
+  form input, form button {
+    padding: .8rem;
+  }
+}
+
+/* Celulares */
+@media screen and (max-width: 425px) {
+  .perfil {
+    width: 70%;
+    margin-top: 4rem;
+    padding: 1rem 2rem;
+  }
+  form input, form button {
+    padding: .7rem;
+  }
+}
