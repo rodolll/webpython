@@ -40,8 +40,6 @@ if (access) {
   const img = document.getElementById('img_user')
   if (token.photo) {
     img.src = `http://127.0.0.1:8000${token.photo}/`
-  } else {
-    img.src = '../images/user.png'
   }
 
 } else {
@@ -53,3 +51,9 @@ if (access) {
 
 
 // Logout
+document.getElementById('logout').addEventListener('click', () => {
+  // Eliminando el token de la memoria del cliente
+  localStorage.removeItem('access')
+  localStorage.removeItem('refresh')
+  window.location.href = '../index.html'
+})
