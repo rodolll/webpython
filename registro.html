@@ -30,7 +30,9 @@
     <ul class="navbar-links">
       <li class="navbar-item"><a class="navbar-link" href="./sobre_nosotros.html">Sobre Nosotros</a></li>
       <li class="navbar-item"><a class="navbar-link" href="./contacto.html">Contacto</a></li>
-      <li class="navbar-item"><a class="navbar-link" href="./registro.html">Registro</a></li>
+      <li class="navbar-item user"><a class="navbar-link" href="#"><img id="img_user" src="" alt="User"></a></li>
+			<li class="navbar-item not_user"><a class="navbar-link" href="#">Login</a></li>
+			<li class="navbar-item not_user"><a class="navbar-link" href="./registro.html">Registro</a></li>
     </ul>
     </div>
   </nav>
@@ -38,7 +40,8 @@
 
   <div class="registro">
     <h1>Registro</h1>
-    <form id="registerForm">
+    <div id="error" style="color: red; text-align: center;"></div>
+    <form id="registerForm" method="post">
       <input type="text" name="username" id="username" placeholder="Usuario" required>
       <input type="email" name="email" id="email" placeholder="Email" required>
       <input type="password" name="password" id="password" placeholder="Contraseña" required>
@@ -47,7 +50,7 @@
     </form>
   </div>
   
-  <script src="./js/usuarios.js"></script>
+  <script src="./js/registro.js"></script>
   <!-- Script navbar toggle -->
 	<script src="./js/header.js"></script>
 </body>
