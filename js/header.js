@@ -51,3 +51,5 @@ if (access) {
   }
 }
 
+
+// Logout

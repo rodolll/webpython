@@ -5,14 +5,15 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 4rem 0;
 }
 
 .perfil {
-  width: 50%;
+  width: 60%;
   margin-top: 2rem;
   background-color: #274c77;
   border-radius: 2.5rem;
-  padding: 2rem 3rem;
+  padding: .4rem 3rem;
 }
 
 .perfil h1 {
@@ -34,22 +35,40 @@ form input, form button {
 }
 
 form button {
-  background-color: #007bff;
+  background-color: #0357b1;
   color: white;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #0357b1;
+  background-color: #007bff;
   border: 1px solid #007bff;
 
 }
 
+
+#deleteForm {
+  width: 99%;
+  padding: 1rem;
+  margin: 10px 5px;
+  border-radius: 1.5rem;
+  background-color: #b10303cc;
+  color: white;
+  cursor: pointer;
+}
+
+#deleteForm:hover {
+  background-color: #ff0000;
+}
+
 /* Tablets */
 @media screen and (max-width: 768px) { 
+  body {
+    padding: 2rem 0;
+  }
   .perfil {
     width: 70%;
-    margin-top: 4rem;
+    margin-top: 0rem;
     padding: 1rem 3rem;
   }
   form {
@@ -58,16 +77,28 @@ form button:hover {
   form input, form button {
     padding: .8rem;
   }
+  #deleteForm {
+    width: 100%;
+    padding: .9rem;
+    margin: 10px 0;
+  }
 }
 
 /* Celulares */
 @media screen and (max-width: 425px) {
+  body {
+    padding: 4rem 0;
+  }
   .perfil {
-    width: 70%;
-    margin-top: 4rem;
-    padding: 1rem 2rem;
+    margin-top: 3rem;
+    padding: .4rem 2rem;
   }
   form input, form button {
     padding: .7rem;
+  }
+  #deleteForm {
+    width: 99%;
+    padding: .9rem;
+    margin: 10px 0;
   }
 }

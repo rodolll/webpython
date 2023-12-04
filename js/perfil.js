@@ -1,19 +1,6 @@
 const url = 'http://127.0.0.1:8000'
 
-// Obteniendo token
-const access = localStorage.getItem('access')
-
-function decodificarToken(token) {
-  const base64Url = token.split('.')[1]
-  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/')
-  const decoded = decodeURIComponent(atob(base64).split('').map(function(c) {
-    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
-  }).join(''))
- 
-  return JSON.parse(decoded)
-
-}
-
+// access y decodificarToken vienen de header.js
 if (access) {
   const token = decodificarToken(access)
 
@@ -27,6 +14,7 @@ if (access) {
     })
     .then((respuesta) => respuesta.json())
     .then((data) => {
+      console.log(data);
       document.getElementById("first_name").value = data.first_name;
       document.getElementById("last_name").value = data.last_name;
       document.getElementById("username").value = data.username;
@@ -50,8 +38,7 @@ if (access) {
     const last_name = document.getElementById('last_name');
     const username = document.getElementById('username');
     const email = document.getElementById('email');
-    const file = document.getElementById('photo');
-    const photo = file.files[0]
+    const photo = document.getElementById('photo').files[0];
 
     username.addEventListener('input', () => {
       error.innerHTML = ''
@@ -81,13 +68,35 @@ if (access) {
       console.log("Data", data);
 
       if(!response.ok) {
-        console.log("Error",`${data.error?.username || data.error?.email}`);
-        error.innerHTML = `${data.error?.username || data.error?.email }`
+        console.log("Error",`${data.detail || data.error?.username || data.error?.email}`);
+        error.innerHTML = `${data.detail || data.error?.username || data.error?.email }`
         return
       }
 
       alert('Usuario actualizado correctamente')
       window.location.href = '../index.html'
+  });
+
+
+  // Eliminar usuario
+  document.getElementById('deleteForm').addEventListener('click', async () => {
+
+    const deleteUser = confirm("Estas seguro que deseas eliminar este usuario?")
+
+    if (deleteUser) {
+      const response = await fetch(`${url}/users/${token.user_id}/`, {
+          method: 'DELETE',
+          headers: {
+            'Authorization': 'Bearer ' + access,
+            'Content-Type': 'application/json',
+          },
+        });
+  
+        alert('Usuario eliminado correctamente')
+        localStorage.removeItem('access')
+        localStorage.removeItem('refresh')
+        window.location.href = '../index.html'
+    }
   });
 
 } else {
