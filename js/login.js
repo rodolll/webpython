@@ -34,6 +34,6 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     alert('Usuario logeado correctamente')
     localStorage.setItem('access', data.access)
     localStorage.setItem('refresh', data.refresh)
-    window.location.href = '../index.html'
+    window.location.href = '/index.html'
 });
 

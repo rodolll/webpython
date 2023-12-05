@@ -32,7 +32,6 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
                              password: password.value, confirm_password: confirm_password.value })
     });
     const data = await response.json()
-    console.log("Data", data);
 
     if(!response.ok) {
       console.log("Error",`${data.error?.non_field_errors || data.error?.username || data.error?.email}`);
@@ -43,6 +42,6 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
     alert('Usuario creado correctamente')
     localStorage.setItem('access', data.access)
     localStorage.setItem('refresh', data.refresh)
-    window.location.href = '../index.html'
+    window.location.href = '/index.html'
 });
 

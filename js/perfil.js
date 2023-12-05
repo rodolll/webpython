@@ -73,7 +73,7 @@ if (access) {
       }
 
       alert('Usuario actualizado correctamente')
-      window.location.href = '../index.html'
+      window.location.href = '/index.html'
   });
 
 
@@ -94,10 +94,10 @@ if (access) {
         alert('Usuario eliminado correctamente')
         localStorage.removeItem('access')
         localStorage.removeItem('refresh')
-        window.location.href = '../index.html'
+        window.location.href = '/index.html'
     }
   });
 
 } else {
-  window.location.href = '../index.html'
+  window.location.href = '/index.html'
 }

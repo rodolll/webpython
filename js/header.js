@@ -54,5 +54,5 @@ document.getElementById('logout').addEventListener('click', () => {
   // Eliminando el token de la memoria del cliente
   localStorage.removeItem('access')
   localStorage.removeItem('refresh')
-  window.location.href = '../index.html'
+  window.location.href = '/index.html'
 })
