@@ -32,8 +32,9 @@ if (access) {
 
   document.getElementById('updateForm').addEventListener('submit', async (event) => {
     event.preventDefault();
-    const first_name = document.getElementById('first_name');
-    const last_name = document.getElementById('last_name');
+
+    const first_name = document.getElementById('first_name').value;
+    const last_name = document.getElementById('last_name').value;
     const username = document.getElementById('username');
     const email = document.getElementById('email');
     const photo = document.getElementById('photo').files[0];
@@ -45,34 +46,33 @@ if (access) {
       error.innerHTML = ''
     })
 
-    const formData = new FormData()
-    formData.append('first_name', first_name.value)
-    formData.append('last_name', last_name.value)
-    formData.append('username', username.value)
+    let formData = new FormData();
     formData.append('email', email.value)
+    formData.append('username', username.value)
+    formData.append('first_name', first_name)
+    formData.append('last_name', last_name)
     if(photo) {
       formData.append('photo', photo)
     }
 
     const response = await fetch(`${url}/users/${token.user_id}/`, {
-        method: 'PATCH',
-        headers: {
-          'Authorization': 'Bearer ' + access,
-          'Content-Type': 'application/json',
-        },
-        body: formData
-      });
-      const data = await response.json()
-      console.log("Data", data);
+      method: 'PATCH',
+      headers: {
+        'Authorization': 'Bearer ' + access
+      },
+      body: formData
+    });
+    const data = await response.json()
 
-      if(!response.ok) {
-        console.log("Error",`${data?.detail}`);
-        error.innerHTML = `${data?.detail}`
-        return
-      }
+    if(!response.ok) {
+      console.log(`${data.detail}`, `${data.error?.username ? `username: ${data.error.username}` : '' || data.error?.email ? `email: ${data.error.email}` : '' }`)
+      error.innerHTML = `${data.error?.username ? `username: ${data.error.username}` : '' || data.error?.email ? `email: ${data.error.email}` : '' || data.error?.photo ? `photo: ${data.error.photo}` : '' }`
+      return
+    }
+    
+    alert('Usuario actualizado correctamente')
+    window.location.href = '../../webpython/index.html'
 
-      alert('Usuario actualizado correctamente')
-      window.location.href = '../../webpython/index.html'
   });
 
 
