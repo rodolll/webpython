@@ -31,7 +31,7 @@ const mostrarDatosEnHTML = (data) => {
           <h1>${data[i].nombre}</h1>
           <img src=${data[i].imagen} alt=${data[i].nombre}>
           <button>
-            <a href="../detalle_producto.html?producto=${data[i].id}"> Detalle ${data[i].nombre}</a>
+            <a href="/detalle_producto.html?producto=${data[i].id}"> Detalle ${data[i].nombre}</a>
           </button>
         </article>
       `

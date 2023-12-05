@@ -14,7 +14,6 @@ if (access) {
     })
     .then((respuesta) => respuesta.json())
     .then((data) => {
-      console.log(data);
       document.getElementById("first_name").value = data.first_name;
       document.getElementById("last_name").value = data.last_name;
       document.getElementById("username").value = data.username;
@@ -68,8 +67,8 @@ if (access) {
       console.log("Data", data);
 
       if(!response.ok) {
-        console.log("Error",`${data.detail || data.error?.username || data.error?.email}`);
-        error.innerHTML = `${data.detail || data.error?.username || data.error?.email }`
+        console.log("Error",`${data?.detail}`);
+        error.innerHTML = `${data?.detail}`
         return
       }
 

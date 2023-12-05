@@ -26,7 +26,7 @@ const mostrarErrorHTML = () => {
       <h1>
         No existe el producto que esta buscando :/
       </h1>
-      <a href="../index.html"> Volver a inicio</a>
+      <a href="/index.html"> Volver a inicio</a>
     </article>
   `
  
