@@ -43,7 +43,6 @@ if (access) {
   }
 
 } else {
-  console.log('Usuario no autenticado');
   for(let i = 0; i < user.length; i++) {
     user[i].style.display = 'none'
   }

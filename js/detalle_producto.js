@@ -115,40 +115,4 @@ const lista_productos = [
   },
 ]
 
-let html
-
-if(isNaN(id_producto) || (0 >= id_producto || id_producto > lista_productos.length)) {
-  html = `
-    <article class="error">
-      <h1>
-        No existe el producto que esta buscando :/
-      </h1>
-      <a href="../index.html"> Volver a inicio</a>
-    </article>
-  `
-} else {
-  let producto = lista_productos[id_producto-1]
-
-  html = `
-    <article class="card">
-      <div>
-        <img src=${producto.imagen} alt=${producto.titulo} class="img-producto">
-      </div>
-      <div class="info">
-        <div>
-          <h1 class="titulo">${producto.titulo}</h1>
-          <h2 class="descripcion">${producto.descripcion}</h2>
-        </div>
-        <div>  
-          <p class="color">Color: ${producto.color}</p>
-          <p class="medida">Medidas: ${producto.medidas}</p>
-          <strong class="precio">Precio: $${producto.precio}</strong>
-        </div>
-      </div>
-    </article>
-  `
-}
-
-const detalleHtml = document.querySelector('main')
-detalleHtml.insertAdjacentHTML('beforeend', html)
 */
