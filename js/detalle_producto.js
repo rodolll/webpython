@@ -2,8 +2,6 @@ const url = 'http://127.0.0.1:8000'
 
 const urlParams = new URLSearchParams(window.location.search)
 const id_producto = urlParams.get('producto') // obteniendo el id del producto
-console.log('URLParams ', urlParams, '\n', 'ID_Producto',id_producto);
-
 
 const obtenerDatos = async () => {
   try {
@@ -19,21 +17,19 @@ const obtenerDatos = async () => {
   }
 }
 
-
 const mostrarErrorHTML = () => {
   let html = `
   <article class="error">
       <h1>
         No existe el producto que esta buscando :/
       </h1>
-      <a href="/index.html"> Volver a inicio</a>
+      <a href="../../webpython/index.html"> Volver a inicio</a>
     </article>
   `
  
   const detalleHtml = document.querySelector('main')
   detalleHtml.insertAdjacentHTML('beforeend', html)
 }
-
 
 const mostrarDatosEnHTML = (data) => {
   let html = `
