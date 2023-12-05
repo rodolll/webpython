@@ -42,6 +42,6 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
     alert('Usuario creado correctamente')
     localStorage.setItem('access', data.access)
     localStorage.setItem('refresh', data.refresh)
-    window.location.href = '/index.html'
+    window.location.href = '../../webpython/index.html'
 });
 

@@ -23,7 +23,6 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
       body: JSON.stringify({ username: username.value, password: password.value})
     });
     const data = await response.json()
-    console.log("Data", data);
 
     if(!response.ok) {
       console.log("Error",`${data?.detail}`);
@@ -34,6 +33,6 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
     alert('Usuario logeado correctamente')
     localStorage.setItem('access', data.access)
     localStorage.setItem('refresh', data.refresh)
-    window.location.href = '/index.html'
+    window.location.href = '../../webpython/index.html'
 });
 

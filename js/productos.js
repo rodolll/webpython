@@ -24,14 +24,13 @@ const mostrarDatosEnHTML = (data) => {
       </article>
     `
   } else {
-    console.log(data);
     for(let i = 0; i < data.length; i++) {
       html += `
         <article class="product-card">
           <h1>${data[i].nombre}</h1>
           <img src=${data[i].imagen} alt=${data[i].nombre}>
           <button>
-            <a href="/detalle_producto.html?producto=${data[i].id}"> Detalle ${data[i].nombre}</a>
+            <a href="../../webpython/detalle_producto.html?producto=${data[i].id}"> Detalle ${data[i].nombre}</a>
           </button>
         </article>
       `

@@ -68,7 +68,6 @@ const lista_productos = [
     color: "blanco, negro, natural",
     medidas: "100cm de diámetro x 75cm",
     descripcion: "Madera maciza con pata central pintada ",
-    imagen: "./images/pexels-tiana-2995012.jpg"
   },
   {
     titulo: "Silla comedor",
@@ -76,7 +75,6 @@ const lista_productos = [
     color: "Roble, Nogal y Wengue",
     medidas: "88cm x 43cm",
     descripcion: "Madera maciza con respaldo curvo",
-    imagen: "./images/silla1.jpeg"
   },
   {
     titulo: "Cama con cajones",
@@ -84,7 +82,6 @@ const lista_productos = [
     color: "Natural o blanco",
     medidas: "1 plaza o 2 plazas",
     descripcion: "Cama con cajones y respaldo",
-    imagen: "./images/Cama-box.jpg"
   },
   {
     titulo: "Placard",
@@ -92,7 +89,6 @@ const lista_productos = [
     color: "blanco, negro",
     medidas: "180cm de ancho x 200cm de alto",
     descripcion: "Hecho con melamina, con puertas corredizas",
-    imagen: "./images/placard.jpg"
   },
   {
     titulo: "Rack TV",
@@ -100,7 +96,6 @@ const lista_productos = [
     color: "blanco, negro, venecia",
     medidas: "150cm Largo, 50cm Profundidad, 60cm Alto",
     descripcion: "Sosten para televisores y otros dispositivos de entretenimiento",
-    imagen: "./images/rack.jpg"
   },
   {
     titulo: "Escritorio",
@@ -108,7 +103,6 @@ const lista_productos = [
     color: "blanco, natural",
     medidas: "70cm de profundidad x 130cm de ancho",
     descripcion: "Escritorio de oficina moderno",
-    imagen: "./images/escritorio.jpg"
   },
 ]
 */
