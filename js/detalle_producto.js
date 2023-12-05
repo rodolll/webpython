@@ -2,6 +2,7 @@ const url = 'http://127.0.0.1:8000'
 
 const urlParams = new URLSearchParams(window.location.search)
 const id_producto = urlParams.get('producto') // obteniendo el id del producto
+console.log('URLParams ', urlParams, '\n', 'ID_Producto',id_producto);
 
 
 const obtenerDatos = async () => {
@@ -114,5 +115,4 @@ const lista_productos = [
     imagen: "./images/escritorio.jpg"
   },
 ]
-
 */
