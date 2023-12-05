@@ -24,7 +24,7 @@ const mostrarDatosEnHTML = (data) => {
       </article>
     `
   } else {
-
+    console.log(data);
     for(let i = 0; i < data.length; i++) {
       html += `
         <article class="product-card">
