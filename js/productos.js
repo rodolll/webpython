@@ -14,7 +14,6 @@ const obtenerDatos = async () => {
   }
 }
 
-
 const mostrarDatosEnHTML = (data) => {
   let html = ''
   if (data.length == 0) {

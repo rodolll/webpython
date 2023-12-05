@@ -26,8 +26,7 @@ if (access) {
 
   obtenerUsuario(token.user_id)
 
-
-
+  
   // Actualizar usuario
   const error = document.getElementById('error')
 
